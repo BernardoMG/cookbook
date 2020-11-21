@@ -10,6 +10,7 @@ RSpec.describe RecipesCollector do
       response = OpenStruct.new(
         body: Helpers::Recipes.recipes_response.to_json
       )
+      
       allow(RestClient).to receive(:get) { response }
 
       result = RecipesCollector.fetch
