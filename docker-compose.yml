@@ -1,0 +1,26 @@
+version: '3.3'
+
+services:
+  backend:
+    build: ./backend
+    environment: 
+      - WEB_CONCURRENCY=2
+      - THREAD_COUNT=5
+      - PORT=8080
+      - RACK_ENV=development
+      - SINATRA_ENV=development
+    ports:
+      - '8080:8080'
+    volumes:
+      - ./backend:/app
+    command: rackup -p 8080 -o 0.0.0.0
+    stdin_open: true
+    tty: true
+  test-backend:
+    build: ./backend
+    environment: 
+      - RACK_ENV=test
+      - SINATRA_ENV=test
+    volumes:
+      - ./backend:/app
+    command: rspec
