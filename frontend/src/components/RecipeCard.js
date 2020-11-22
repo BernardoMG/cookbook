@@ -1,5 +1,4 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -9,52 +8,14 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import RestaurantRoundedIcon from '@material-ui/icons/RestaurantRounded';
 import { recipePhotos } from './util/photo';
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    backgroundColor: 'white',
-  },
-  media: {
-    height: 160
-  },
-  title: {
-    fontWeight: 'bold',
-    marginBottom: 0
-  },
-  subtitle: {
-    fontWeight: 'normal',
-    marginBottom: 0
-  },
-  tags: {
-    display: 'flex',
-    paddingTop: '10px'
-  },
-  type: {
-    ...theme.typography.button,
-    textDecorationColor: '#282c34',
-    textAlign: 'center',
-    paddingTop: '3px',
-    fontSize: '13px',
-    fontWeight: 'bold'
-  },
-  chef: {
-    marginTop: '3px',
-    paddingRight: '5px',
-    textAlign: 'right',
-    border: 'none',
-    backgroundColor: 'transparent'
-  },
-  chefIcon: {
-    marginTop: '3px'
-  }
-}));
+import { recipeCardStyles } from './styles/theme';
 
 /**
  * Recipe card component.
  * Renders recipe information.
  */
 const RecipeCard = (props) => {
-  const classes = useStyles();
+  const classes = recipeCardStyles();
 
   return (
     <Card className={classes.root}>

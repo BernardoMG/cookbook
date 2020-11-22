@@ -1,22 +1,15 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Logo from './Logo';
 import RecipesList from './RecipesList'
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    padding: theme.spacing(2)
-  }
-}));
+import { cookBookStyles } from './styles/theme';
 
 /**
  * Root component.
  * Renders recipes page.
  */
 const CookBook = () => {
-  const classes = useStyles();
+  const classes = cookBookStyles();
 
   return (
     <div className={classes.root}>
