@@ -25,11 +25,11 @@ services:
     environment:
       - CHOKIDAR_USEPOLLING=true
     command: npm start
-  # test-backend:
-  #   build: ./backend
-  #   environment: 
-  #     - RACK_ENV=test
-  #     - SINATRA_ENV=test
-  #   volumes:
-  #     - ./backend:/app
-  #   command: rspec
+  test-backend:
+    build: ./backend
+    environment: 
+      - RACK_ENV=test
+      - SINATRA_ENV=test
+    volumes:
+      - ./backend:/app
+    command: rspec
