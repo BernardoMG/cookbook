@@ -16,11 +16,20 @@ services:
     command: rackup -p 8080 -o 0.0.0.0
     stdin_open: true
     tty: true
-  test-backend:
-    build: ./backend
-    environment: 
-      - RACK_ENV=test
-      - SINATRA_ENV=test
+  frontend:
+    build: ./frontend
+    ports:
+      - '3000:3000'
     volumes:
-      - ./backend:/app
-    command: rspec
+      - './frontend:/app'
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    command: npm start
+  # test-backend:
+  #   build: ./backend
+  #   environment: 
+  #     - RACK_ENV=test
+  #     - SINATRA_ENV=test
+  #   volumes:
+  #     - ./backend:/app
+  #   command: rspec

@@ -8,8 +8,12 @@ require_relative '../lib/recipes_collector'
 #  - 400    - Bad request
 #  - 500    - Internal server error
 class RecipesController < Sinatra::Base
+
   # GET /
   get '/' do
+    # Deal with cross origin
+    # This should be changed for production environment
+    headers 'Access-Control-Allow-Origin' => 'http://localhost:3000'
     content_type :json
 
     result = RecipesCollector.fetch
