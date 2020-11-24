@@ -22,7 +22,7 @@ If they were a little more complex, I'd choose Ruby on Rails 6 in API mode becau
 
 For testing purposes, I've installed Rspec which is the most popular testing framework for Ruby and I use it on a daily basis. 
 
-##### Note: I tried to use several gems to fetch recipe images using Goggle API but it seems that its deprecated so I didn't found any working gem. That why these images are static on the client-side.
+##### Note: Since your gist doesn't provide public URLs for recipe images, I tried to use several gems to fetch images using Goggle API but it seems that its deprecated so I didn't found any working gem. That why these images are static on the client-side.
 
 ### Frontend
 I choose React to develop the client-side. Although I've already a couple of months of experience, it was the first time that I took benefit from the Hooks. It's cool! 🤘🏼. I used Material UI just to easily add some nice UI modules and for testing I've installed several tools such as Enzime and testing-library/react. 
