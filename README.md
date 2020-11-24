@@ -15,6 +15,8 @@
 
 ##### Note: I've also setup Travis CI for this repository. You can check its badge on top of this page ✅🚀.
 
+![Nov-24-2020 11-34-14](https://user-images.githubusercontent.com/11138222/100089183-34e75c00-2e49-11eb-9510-377acdd84790.gif)
+
 ## Tech Decisions
 ### Backend
 I choose to use Sinatra because its a very lightweight framework. Ideal for these simple functional requirements. 
