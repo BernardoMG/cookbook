@@ -22,7 +22,7 @@ const RecipeCard = (props) => {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={recipePhotos[props.photo_index]}
+          image={recipePhotos[props.photoIndex]}
         />
         <CardContent>
           <Typography className={classes.title}  variant='subtitle1' gutterBottom>
