@@ -1,5 +1,5 @@
 import React from 'react';
-import CookBookLogo from './../assets/imgs/logo.jpeg' 
+import CookBookLogo from './../assets/imgs/logo.jpeg';
 import { logoStyles } from './styles/theme';
 
 /**
@@ -11,6 +11,6 @@ const Logo = () => {
   return (
     <img className={classes.img} src ={CookBookLogo} alt={'logo'} />
   );
-}
+};
 
 export default Logo;

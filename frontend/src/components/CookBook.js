@@ -1,7 +1,7 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Logo from './Logo';
-import RecipesList from './RecipesList'
+import RecipesList from './RecipesList';
 import { cookBookStyles } from './styles/theme';
 
 /**
@@ -21,6 +21,6 @@ const CookBook = () => {
       </Grid>
     </div>
   );
-}
+};
 
 export default CookBook;

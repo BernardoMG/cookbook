@@ -13,7 +13,7 @@ const RecipesList = () => {
   const [isLoading, setIsLoading] = useState(true)
   const [state, setState] = useState({
     recipes: []
-  })
+  });
 
   /**
    * Creates a RecipeCard component for each recipe provided by the backend.
@@ -66,6 +66,6 @@ const RecipesList = () => {
       }
     </React.Fragment>
   );
-}
+};
 
 export default RecipesList;

@@ -50,6 +50,6 @@ const RecipeCard = (props) => {
       </CardActionArea>
     </Card>
   );
-}
+};
 
 export default RecipeCard;
