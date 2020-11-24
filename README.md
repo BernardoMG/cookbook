@@ -17,6 +17,9 @@
 
 ## Tech Decisions
 ### Backend
-I choose to use Sinatra because its very lightweight the backend in terms of functional requirements is pretty simple 
+I choose to use Sinatra because its a very lightweight framework. Ideal for these simple functional requirements. 
+If the requirements were a little more complex, I'd choose to use Ruby on Rails 6 in API mode because I've much more experience with it.
+
+For testing, I use Rspec which is the most popular testing framework for Ruby and I use it a daily basis.
 
 ### Frontend

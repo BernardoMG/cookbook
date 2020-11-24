@@ -7,7 +7,7 @@ WORKDIR /app
 COPY package.json ./package.json
 COPY yarn.lock ./yarn.lock
 
-RUN npm install --silent
+RUN yarn install --silent
 RUN npm install react-scripts@4.0.0 -g --silent
 
 # add app
