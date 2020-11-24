@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/BernardoMG/cookbook.svg?token=zJz33RY7FtoBwrYp4yBw&branch=master)](https://travis-ci.com/BernardoMG/cookbook)
 
-# CookBook App
+# CookBook App 🍲
 
 ## How to build and run the app
 
@@ -18,8 +18,13 @@
 ## Tech Decisions
 ### Backend
 I choose to use Sinatra because its a very lightweight framework. Ideal for these simple functional requirements. 
-If the requirements were a little more complex, I'd choose to use Ruby on Rails 6 in API mode because I've much more experience with it.
+If the requirements were a little more complex, I'd choose Ruby on Rails 6 in API mode because I've much more experience with it.
 
-For testing, I use Rspec which is the most popular testing framework for Ruby and I use it a daily basis.
+For testing purposes, I've installed Rspec which is the most popular testing framework for Ruby and I use it on a daily basis. 
+
+##### Note: I tried to use several gems to fetch recipe images using Goggle API but it seems that its deprecated so I didn't found any working gem. That why these images are static on the client-side.
 
 ### Frontend
+I choose React to develop the client-side. Although I've already a couple of months of experience, it was the first time that I took benefit from the Hooks. It's cool! 🤘🏼. I used Material UI just to easily add some nice UI modules and for testing I've installed several tools such as Enzime and testing-library/react. 
+
+Usually, I also set Codacy to perform static code analysis, code style errors and get test coverage for both backend and frontend code.
