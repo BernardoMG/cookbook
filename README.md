@@ -18,7 +18,7 @@
 ## Tech Decisions
 ### Backend
 I choose to use Sinatra because its a very lightweight framework. Ideal for these simple functional requirements. 
-If the requirements were a little more complex, I'd choose Ruby on Rails 6 in API mode because I've much more experience with it.
+If they were a little more complex, I'd choose Ruby on Rails 6 in API mode because I've much more experience with it.
 
 For testing purposes, I've installed Rspec which is the most popular testing framework for Ruby and I use it on a daily basis. 
 
@@ -27,4 +27,4 @@ For testing purposes, I've installed Rspec which is the most popular testing fra
 ### Frontend
 I choose React to develop the client-side. Although I've already a couple of months of experience, it was the first time that I took benefit from the Hooks. It's cool! 🤘🏼. I used Material UI just to easily add some nice UI modules and for testing I've installed several tools such as Enzime and testing-library/react. 
 
-Usually, I also set Codacy to perform static code analysis, code style errors and get test coverage for both backend and frontend code.
+Usually, I also set Codacy to perform static code analysis, detect code style errors and calculate test coverage for both backend and frontend code.
