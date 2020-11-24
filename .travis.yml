@@ -12,6 +12,7 @@ before_script:
 
 script: 
   - docker-compose run test-backend
+  - docker-compose run test-frontend
 
 after_script:
   - docker-compose down -v
