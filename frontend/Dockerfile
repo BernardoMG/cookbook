@@ -5,11 +5,10 @@ RUN mkdir app
 WORKDIR /app
 
 COPY package.json ./package.json
-COPY package-lock.json ./package-lock.json
 COPY yarn.lock ./yarn.lock
 
-RUN npm install --silent
 RUN npm install react-scripts@4.0.0 -g --silent
+RUN npm install --silent
 
 # add app
 COPY . /app
