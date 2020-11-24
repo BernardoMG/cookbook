@@ -26,7 +26,7 @@ const RecipesList = () => {
     recipes.forEach(function (recipe, index) {
       cards.push(
         <Grid item xs={6} sm={3} key={index}>
-          <RecipeCard key={index} recipe={recipe} photo_index={index} />
+          <RecipeCard key={index} recipe={recipe} photoIndex={index} />
         </Grid>
       )
     });
